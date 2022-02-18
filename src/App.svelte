@@ -38,10 +38,7 @@
 
 <main>
 	<h1>Hello {name || 'None'}!</h1>
-	<select
-		bind:value={countrySelected}
-		on:change="{GetCountryFromPhoneNumber}"
-		>
+	<select bind:value={countrySelected} on:change="{GetCountryFromPhoneNumber}">
 		{#each countryList as country}
 			<option value={country}>
 				{country}
